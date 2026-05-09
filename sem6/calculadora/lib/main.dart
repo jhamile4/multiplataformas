@@ -46,7 +46,7 @@ class _CalculadoraScreenState extends State<CalculadoraScreen> {
         if (_display != "0") {
           _display = _display.startsWith("-") ? _display.substring(1) : "-$_display";
         }
-      } else if (["÷", "×", "-", "+"].contains(texto)) {
+      } else if (["÷", "×", "-", "+", "%"].contains(texto)) {
         _num1 = double.tryParse(_display);
         _operacion = texto;
         _historial = "$_display $texto";
@@ -59,6 +59,7 @@ class _CalculadoraScreenState extends State<CalculadoraScreen> {
           if (_operacion == "-") res = _num1! - num2;
           if (_operacion == "×") res = _num1! * num2;
           if (_operacion == "÷") res = num2 != 0 ? _num1! / num2 : 0;
+          if (_operacion == "%") res = num2 != 0 ? _num1! % num2 : 0;
 
           _historial = "$_num1 $_operacion $num2 =";
           _display = res.toString().endsWith(".0") 
