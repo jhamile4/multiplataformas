@@ -94,7 +94,7 @@ class LoginPage extends StatelessWidget {
                 borderRadius: BorderRadius.circular(28),
                 boxShadow: [
                   BoxShadow(
-                    color: Colors.black.withOpacity(0.18),
+                    color: Colors.black.withValues(alpha: 0.18),
                     blurRadius: 30,
                     offset: const Offset(0, 16),
                   ),
@@ -248,7 +248,7 @@ class MenuPage extends StatelessWidget {
                       borderRadius: BorderRadius.circular(18),
                     ),
                     leading: CircleAvatar(
-                      backgroundColor: AppColors.purple.withOpacity(0.12),
+                      backgroundColor: AppColors.purple.withValues(alpha: 0.12),
                       child: Icon(item.icon, color: AppColors.purple),
                     ),
                     title: Text(
@@ -466,7 +466,7 @@ class _ListViewPageState extends State<ListViewPage> {
                         borderRadius: BorderRadius.circular(18),
                       ),
                       leading: CircleAvatar(
-                        backgroundColor: AppColors.blue.withOpacity(0.15),
+                        backgroundColor: AppColors.blue.withValues(alpha: 0.15),
                         child: Text('${index + 1}'),
                       ),
                       title: Text(
@@ -633,7 +633,7 @@ Widget heroCard({
       borderRadius: BorderRadius.circular(22),
       boxShadow: [
         BoxShadow(
-          color: Colors.black.withOpacity(0.06),
+          color: Colors.black.withValues(alpha: 0.06),
           blurRadius: 18,
           offset: const Offset(0, 8),
         ),
@@ -643,7 +643,7 @@ Widget heroCard({
       children: [
         CircleAvatar(
           radius: 28,
-          backgroundColor: AppColors.purple.withOpacity(0.12),
+          backgroundColor: AppColors.purple.withValues(alpha: 0.12),
           child: Icon(icon, color: AppColors.purple),
         ),
         const SizedBox(width: 16),
