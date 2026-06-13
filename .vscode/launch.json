@@ -1,9 +1,24 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+        {
+            "name": "Semana 13: Ventanita (Cupertino)",
+            "program": "sem13/ventanita/lib/main.dart",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "Semana 10: Prime Video Clone",
+            "program": "sem10/prime_video_clone/lib/main.dart",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "Semana 8: Pestani-ta",
+            "program": "sem8/pestani_ta/lib/main.dart",
+            "request": "launch",
+            "type": "dart"
+        },
         {
             "type": "chrome",
             "request": "launch",
